@@ -74,11 +74,11 @@ export default function Home() {
             width={50}
             height={50}
           />
-          <h1 className="text-2xl font-bold text-gray-800 ml-2">
+          <h1 className="text-2xl text-center font-bold text-gray-800 ml-2">
             Toca Ranking Boulder 2023
           </h1>
         </div>
-        <span className="text-xl font-bold text-gray-500">Pontos totais: {getTotalPoints()}</span>
+        <span className="text-xl font-bold text-gray-500 mt-2">Pontos totais: {getTotalPoints()}</span>
       </div>
       <div className='flex flex-col items-center justify-start w-full h-full overflow-y-auto pb-16'>
         <table className="border-collapse border border-gray-800 w-full max-w-sm mb-4 shadow-md">
