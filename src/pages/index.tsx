@@ -92,15 +92,15 @@ export default function Home() {
           <tbody className="text-center">
             {pointsData?.map((item, index) => (
               <tr key={item.boulder} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
-                <td className="border border-gray-800 px-4 py-2 w-20">{item.boulder}</td>
+                <td className="border border-gray-800 select-none px-4 py-2 w-20">{item.boulder}</td>
                 <td
-                  className={`border border-gray-800 px-4 py-2 cursor-pointer ${selectedPoints.flash.includes(item.boulder) ? 'bg-green-300' : ''}`}
+                  className={`border border-gray-800 select-none px-4 py-2 cursor-pointer ${selectedPoints.flash.includes(item.boulder) ? 'bg-green-300' : ''}`}
                   onClick={() => handlePointClick('flash', item.flash, item.boulder)}
                 >
                   {item.flash}
                 </td>
                 <td
-                  className={`border border-gray-800 px-4 py-2 cursor-pointer ${selectedPoints.twoOrMore.includes(item.boulder) ? 'bg-blue-300' : ''}`}
+                  className={`border border-gray-800 select-none px-4 py-2 cursor-pointer ${selectedPoints.twoOrMore.includes(item.boulder) ? 'bg-purple-300' : ''}`}
                   onClick={() => handlePointClick('twoOrMore', item.twoOrMore, item.boulder)}
                 >
                   {item.twoOrMore}
@@ -115,7 +115,6 @@ export default function Home() {
       </div>
 
       <footer>
-        {/* feito por André Cunha (https://instagram.com/andreocunha) */}
         <a
           href="https://instagram.com/andreocunha"
           target="_blank"
