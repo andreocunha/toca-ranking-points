@@ -193,7 +193,7 @@ export const pointsData: BoulderData[] = [
   },
   {
     boulder: 39,
-    flash: 748,
+    flash: 784,
     twoOrMore: 640
   },
   {
