@@ -134,7 +134,7 @@ export const pointsData: BoulderData[] = [
   {
     boulder: 27,
     flash: 384,
-    twoOrMore: 314
+    twoOrMore: 301
   },
   {
     boulder: 28,
